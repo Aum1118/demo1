@@ -454,6 +454,7 @@ button, a { transition: var(--transition); }
 }
 .center{
   position: relative;
+  
 }
 
 .centered {
@@ -510,10 +511,15 @@ h2.h1.hero-title {
   
 }
 
+.center-src{
+  position: relative;
+  width: 50px;
+}
+
 .hero-form-wrapper {
  
   margin-block-start: -100px;
-  width: calc(100% - 10px);
+  width: calc(100% - 5px);
   margin-inline: auto;
   border-radius: var(--radius-16);
   overflow: hidden;
@@ -521,7 +527,7 @@ h2.h1.hero-title {
 }
 
 .form-tab {
-  padding: 16px;
+  padding: 8px;
   border-block-end: 1px solid var(--gainsboro);
   display: flex;
   justify-content: center;
@@ -571,7 +577,7 @@ h2.h1.hero-title {
   position: absolute;
   top: 50%;
   transform: translateY(20%);
-  left: 15px;
+  left: 10px;
   color: var(--oxford-blue);
   --ionicon-stroke-width: 40px;
 }
@@ -1148,6 +1154,18 @@ h2.h1.hero-title {
   #FOOTER
 \*-----------------------------------*/
 
+.footer-top {
+  background-color: transparent;
+  padding-top: 50px;
+}
+
+
+.footer-link-box {
+  margin-top: -50px;
+}
+
+
+
 .footer {
   background: var(--raisin-black-1);
   color: var(--white);
@@ -1311,6 +1329,8 @@ h2.h1.hero-title {
   /**
    * FOOTER
    */
+
+  
 
   .footer-link-box {
     display: flex;
