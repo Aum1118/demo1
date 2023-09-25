@@ -15,7 +15,7 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/style.css">
 
   <!-- 
     - google font link
@@ -36,8 +36,6 @@
   -->
 
   <header class="header" data-header>
-
-    <!-- -->
 
     <div class="overlay" data-overlay></div>
 
@@ -98,13 +96,12 @@
 
       </div>
     </div>
-  -->
 
     <div class="header-bottom">
       <div class="container">
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.png" alt="Homeverse logo">
+          <img src="images/DreamHome.jpg" alt="Homeverse logo">
         </a>
 
         <nav class="navbar" data-navbar>
@@ -120,8 +117,6 @@
             </button>
 
           </div>
-
-
 
           <div class="navbar-bottom">
             <ul class="navbar-list">
@@ -161,6 +156,11 @@
           </button>
         -->
 
+        <button class="header-bottom-actions-btn" aria-label="Profile">
+          <ion-icon name="heart-outline"></ion-icon>
+          <span>Favourite</span>
+        </button>
+
           <button class="header-bottom-actions-btn" aria-label="Profile">
             <ion-icon name="person-outline"></ion-icon>
 
@@ -173,6 +173,9 @@
             <span>Cart</span>
           </button>
         -->
+
+
+
 
           <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
             <ion-icon name="menu-outline"></ion-icon>
@@ -194,191 +197,103 @@
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
 
 
+
+
+  <main>
+    <article>
       <section class="section hero" aria-label="hero">
-
-        
         <div class="fullscreen">
           <div class="center">
-
-          
-
-          <img src="/assets/images/WhatsApp Image 2023-09-21 at 10.18.54 PM.jpeg" alt="img" class="center">
-         
-          
-         
-         <div class="centered">
-
-
-          <div class="hero-bg">
-            <div class="hero-content">
-
-              
-
-             
-
+            <img src="images/banner.png" alt="img" class="center">
+            <div class="centered">
+              <div class="hero-bg">
+                <div class="hero-content">
+                </div>
+              </div>
+      
+              <div class="hero-form-wrapper">
+                <div class="form-tab">
+                  <button class="tab-btn active" data-tab-btn>Buy</button>
+                  <button class="tab-btn" data-tab-btn>Sell</button>
+                  <button class="tab-btn" data-tab-btn>Rent</button>
+                </div>
+      
+                <form action="" class="hero-form">
+                  <div class="input-wrapper">
+                    <label for="Location" class="input-label">Search</label>
+                    <input type="Location" name="Location" id="Location" placeholder="Search your home" required class="input-field">
+                    <ion-icon name="search-outline"></ion-icon>
+                  </div>
+      
+                  <div class="input-wrapper">
+                    <label for="category" class="input-label">Type:</label>
+                    <select name="category" id="category" class="dropdown-list">
+                      <option value="house">House</option>
+                      <option value="apartment">Apartment</option>
+                      <option value="offices">Offices</option>
+                      <option value="townhome">Townhome</option>
+                    </select>
+                  </div>
+      
+                  <div class="input-wrapper">
+                    <label for="min-price" class="input-label">Min Price :</label>
+                    <select name="min-price" id="min-price" class="dropdown-list">
+                      <option value="min price">Min Price</option>
+                      <option value="500">500</option>
+                      <option value="1000">1000</option>
+                      <option value="2000">2000</option>
+                      <option value="3000">3000</option>
+                      <option value="4000">4000</option>
+                      <option value="5000">5000</option>
+                      <option value="6000">6000</option>
+                    </select>
+                  </div>
+      
+                  <div class="max-price-wrapper">
+                    <div class="input-wrapper">
+                      <label for="max-price" class="input-label">Max Price :</label>
+                      <select name="max-price" id="max-price" class="dropdown-list">
+                        <option value="max price">Max Price</option>
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                        <option value="2000">2000</option>
+                        <option value="3000">3000</option>
+                        <option value="4000">4000</option>
+                        <option value="5000">5000</option>
+                        <option value="6000">6000</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search now</button>
+                  </div>
+      
+                </form>
+              </div>
             </div>
           </div>
-
-          <div class="hero-form-wrapper">
-            <div class="form-tab">
-
-              <button class="tab-btn active" data-tab-btn>Buy</button>
-              <button class="tab-btn" data-tab-btn>Sell</button>
-              <button class="tab-btn" data-tab-btn>Rent</button>
-
-            </div>
-
-            <form action="" class="hero-form">
-
-              <div class="input-wrapper">
-
-                <label for="search" class="input-label">Search</label>
-
-                <input type="search" name="search" id="search" placeholder="Search your home" required
-                  class="input-field">
-
-                <ion-icon name="search-outline"></ion-icon>
-
-              </div>
-
-              <div class="input-wrapper">
-                <label for="category" class="input-label">Type:</label>
-
-                <select name="category" id="category" class="dropdown-list">
-
-                  <option value="house">House</option>
-                  <option value="apartment">Apartment</option>
-                  <option value="offices">Offices</option>
-                  <option value="townhome">Townhome</option>
-
-                </select>
-              </div>
-
-              <div class="input-wrapper">
-                <label for="min-price" class="input-label">Min Price :</label>
-
-                <select name="min-price" id="min-price" class="dropdown-list">
-
-                  <option value="min price">Min Price</option>
-                  <option value="500">500</option>
-                  <option value="1000">1000</option>
-                  <option value="2000">2000</option>
-                  <option value="3000">3000</option>
-                  <option value="4000">4000</option>
-                  <option value="5000">5000</option>
-                  <option value="6000">6000</option>
-
-                </select>
-              </div>
-
-              <div class="input-wrapper">
-                <label for="max-price" class="input-label">Max Price :</label>
-
-                <select name="max-price" id="max-price" class="dropdown-list">
-
-                  <option value="max price">Max Price</option>
-                  <option value="500">500</option>
-                  <option value="1000">1000</option>
-                  <option value="2000">2000</option>
-                  <option value="3000">3000</option>
-                  <option value="4000">4000</option>
-                  <option value="5000">5000</option>
-                  <option value="6000">6000</option>
-
-                </select>
-              </div>
-
-              <button type="submit" class="btn btn-primary">Search now</button>
-
-            </form>
-          </div>
-        </div>
-
         </div>
       </section>
-
-
-
+      
+      <style>
+        .max-price-wrapper {
+          display: flex;
+          align-items: center;
+        }
+      
+        .max-price-wrapper .input-wrapper {
+          flex: 1;
+        }
+      
+        .max-price-wrapper .btn {
+          margin-left: 10px; /* Adjust the margin as needed */
+        }
+      </style>
+      
 
     
       
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="about" id="about">
-        <div class="container">
-
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner-1.png" alt="House interior">
-
-            <img src="./assets/images/about-banner-2.jpg" alt="House interior" class="abs-img">
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">About Us</p>
-
-            <h2 class="h2 section-title">The Leading Real Estate Marketplace.</h2>
-
-            <p class="about-text">
-              "Unlock a World of Real Estate Opportunities: Your One-Stop Destination to Buy, Sell, and Rent Properties, Tailored to Your Needs. Join Us and Discover the Home of Your Dreams!"
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="home-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Smart Home Design</p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="leaf-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Beautiful Scene Around</p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="wine-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Exceptional Lifestyle</p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="shield-checkmark-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Complete 24/7 Security</p>
-              </li>
-
-            </ul>
-
-            <p class="callout">
-              We are a team of 10 people working on a Software Project to build this Model "Real Estate" website.
-            </p>
-
-            <!----
-
-            <a href="#Buyer" class="btn">Our Buyers</a>
-            -->
-
-          </div>
-        </div>   
-        </div>
-      </section>
+      
 
       <!--
         service
@@ -401,7 +316,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/service-1.png" alt="Service icon">
+                  <img src="images/service-1.png" alt="Service icon">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -426,7 +341,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/service-2.png" alt="Service icon">
+                  <img src="images/service-2.png" alt="Service icon">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -451,7 +366,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/service-3.png" alt="Service icon">
+                  <img src="images/service-3.png" alt="Service icon">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -484,497 +399,809 @@
      
 
       <!-- 
-        - #PROPERTY
+        - # Recommended Properties
       -->
 
       <section class="property" id="property">
-        <div class="container">
-
+        <div class="section">
+    
           <p class="section-subtitle">Properties</p>
-
+    
           <h2 class="h2 section-title">Recommended Properties</h2>
-
-          <ul class="property-list has-scrollbar">
-
+    
+          <ul class="service-list">
+    
             <li>
               <div class="property-card">
-
+    
                 <figure class="card-banner">
-
+    
                   <a href="#">
-                    <img src="./assets/images/property-1.jpg" alt="New Apartment Nice View" class="w-100">
+                    <img src="Recommended Props/1prop.jpg" alt="New Apartment Nice View" class="w-100">
                   </a>
-
+    
                   <div class="card-badge green">For Rent</div>
-
+    
                   <div class="banner-actions">
-
+    
                     <button class="banner-actions-btn">
                       <ion-icon name="location"></ion-icon>
-
-                      <address>Belmont Gardens, Chicago</address>
+    
+                      <address>Omkar Elegance, Ahmedabad</address>
                     </button>
-
+    
                     <button class="banner-actions-btn">
                       <ion-icon name="camera"></ion-icon>
-
+    
                       <span>4</span>
                     </button>
-
+    
                     <button class="banner-actions-btn">
                       <ion-icon name="film"></ion-icon>
-
+    
                       <span>2</span>
                     </button>
-
+    
                   </div>
-
+    
                 </figure>
-
+    
                 <div class="card-content">
-
+    
                   <div class="card-price">
-                    <strong>$34,900</strong>/Month
+                    <strong>₹26,600</strong>/Month
                   </div>
-
+    
                   <h3 class="h3 card-title">
-                    <a href="#">New Apartment Nice View</a>
+                    <a href="#">New Apartment</a>
                   </h3>
-
+    
                   <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                    Beautiful Family House In Heart Of Ahmedabad. Newly Renovated with New Furniture.
                   </p>
-
+    
                   <ul class="card-list">
-
+    
                     <li class="card-item">
                       <strong>3</strong>
-
+    
                       <ion-icon name="bed-outline"></ion-icon>
-
+    
                       <span>Bedrooms</span>
                     </li>
-
+    
                     <li class="card-item">
                       <strong>2</strong>
-
+    
                       <ion-icon name="man-outline"></ion-icon>
-
+    
                       <span>Bathrooms</span>
                     </li>
-
+    
                     <li class="card-item">
-                      <strong>3450</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
+                      <strong>1800</strong>
+    
+                      
+    
                       <span>Square Ft</span>
                     </li>
-
+    
                   </ul>
-
+    
                 </div>
-
+    
                 <div class="card-footer">
-
+    
                   <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
+    
+                    
+    
                     <div>
                       <p class="author-name">
-                        <a href="#">William Seklo</a>
+                        <a href="#">Omkar Infrastructure</a>
                       </p>
-
+    
                       <p class="author-title">Estate Agents</p>
                     </div>
-
+    
                   </div>
-
+    
                   <div class="card-footer-actions">
-
+    
                     <button class="card-footer-actions-btn">
                       <ion-icon name="resize-outline"></ion-icon>
                     </button>
-
+    
                     <button class="card-footer-actions-btn">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
+    
+                
+    
                   </div>
-
+    
                 </div>
-
+    
               </div>
             </li>
-
+    
             <li>
               <div class="property-card">
-
+    
                 <figure class="card-banner">
-
+    
                   <a href="#">
-                    <img src="./assets/images/property-2.jpg" alt="Modern Apartments" class="w-100">
+                    <img src="Recommended Props/2prop.jpg" alt="Modern Apartments" class="w-100">
                   </a>
-
-                  <div class="card-badge orange">For Sales</div>
-
+    
+                  <div class="card-badge orange">For Sale</div>
+    
                   <div class="banner-actions">
-
+    
                     <button class="banner-actions-btn">
                       <ion-icon name="location"></ion-icon>
-
-                      <address>Belmont Gardens, Chicago</address>
+    
+                      <address>Vastral, Ahmedabad</address>
                     </button>
-
+    
                     <button class="banner-actions-btn">
                       <ion-icon name="camera"></ion-icon>
-
+    
                       <span>4</span>
                     </button>
-
+    
                     <button class="banner-actions-btn">
                       <ion-icon name="film"></ion-icon>
-
+    
                       <span>2</span>
                     </button>
-
+    
                   </div>
-
+    
                 </figure>
-
+    
                 <div class="card-content">
-
+    
                   <div class="card-price">
-                    <strong>$34,900</strong>/Month
+                    <strong>₹50.00 L</strong>
                   </div>
-
+    
                   <h3 class="h3 card-title">
                     <a href="#">Modern Apartments</a>
                   </h3>
-
+    
                   <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                    Comfortable and Spacious Apartment for Sale in one of the Posh areas of Ahmedabad.
                   </p>
-
+    
                   <ul class="card-list">
-
+    
                     <li class="card-item">
                       <strong>3</strong>
-
+    
                       <ion-icon name="bed-outline"></ion-icon>
-
+    
                       <span>Bedrooms</span>
                     </li>
-
+    
                     <li class="card-item">
                       <strong>2</strong>
-
+    
                       <ion-icon name="man-outline"></ion-icon>
-
+    
                       <span>Bathrooms</span>
                     </li>
-
+    
                     <li class="card-item">
-                      <strong>3450</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
+                      <strong>1750</strong>
+    
+                     
+    
                       <span>Square Ft</span>
                     </li>
-
+    
                   </ul>
-
+    
                 </div>
-
+    
                 <div class="card-footer">
-
+    
                   <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
+    
+                    
+    
                     <div>
                       <p class="author-name">
-                        <a href="#">William Seklo</a>
+                        <a href="#">Angel Group</a>
                       </p>
-
+    
                       <p class="author-title">Estate Agents</p>
                     </div>
-
+    
                   </div>
-
+    
                   <div class="card-footer-actions">
-
+    
                     <button class="card-footer-actions-btn">
                       <ion-icon name="resize-outline"></ion-icon>
                     </button>
-
+    
                     <button class="card-footer-actions-btn">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
+    
+                    
                   </div>
-
+    
                 </div>
-
+    
               </div>
             </li>
-
+    
             <li>
               <div class="property-card">
-
+    
                 <figure class="card-banner">
-
+    
                   <a href="#">
-                    <img src="./assets/images/property-3.jpg" alt="Comfortable Apartment" class="w-100">
+                    <img src="Recommended Props/3prop.jpeg" alt="Comfortable Apartment" class="w-100">
                   </a>
-
+    
                   <div class="card-badge green">For Rent</div>
-
+    
                   <div class="banner-actions">
-
+    
                     <button class="banner-actions-btn">
                       <ion-icon name="location"></ion-icon>
-
-                      <address>Belmont Gardens, Chicago</address>
+    
+                      <address>Gota, Ahmedabad</address>
                     </button>
-
+    
                     <button class="banner-actions-btn">
                       <ion-icon name="camera"></ion-icon>
-
+    
                       <span>4</span>
                     </button>
-
+    
                     <button class="banner-actions-btn">
                       <ion-icon name="film"></ion-icon>
-
+    
                       <span>2</span>
                     </button>
-
+    
                   </div>
-
+    
                 </figure>
-
+    
                 <div class="card-content">
-
+    
                   <div class="card-price">
-                    <strong>$34,900</strong>/Month
+                    <strong>₹77.99 L</strong>
                   </div>
-
+    
                   <h3 class="h3 card-title">
-                    <a href="#">Comfortable Apartment</a>
+                    <a href="#">Luxurious Apartment</a>
                   </h3>
-
+    
                   <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                    Fully Furnished Apartment with Interior Decor, </br>
+                    For Rent
                   </p>
-
+    
                   <ul class="card-list">
-
+    
                     <li class="card-item">
                       <strong>3</strong>
-
+    
                       <ion-icon name="bed-outline"></ion-icon>
-
+    
                       <span>Bedrooms</span>
                     </li>
-
+    
                     <li class="card-item">
                       <strong>2</strong>
-
+    
                       <ion-icon name="man-outline"></ion-icon>
-
+    
                       <span>Bathrooms</span>
                     </li>
-
+    
                     <li class="card-item">
-                      <strong>3450</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
+                      <strong>2050</strong>
+    
+                      
+    
                       <span>Square Ft</span>
                     </li>
-
+    
                   </ul>
-
+    
                 </div>
-
+    
                 <div class="card-footer">
-
+    
                   <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
+    
+                   
+    
                     <div>
                       <p class="author-name">
-                        <a href="#">William Seklo</a>
+                        <a href="#">The Festival Group</a>
                       </p>
-
+    
                       <p class="author-title">Estate Agents</p>
                     </div>
-
+    
                   </div>
-
+    
                   <div class="card-footer-actions">
-
+    
                     <button class="card-footer-actions-btn">
                       <ion-icon name="resize-outline"></ion-icon>
                     </button>
-
+    
                     <button class="card-footer-actions-btn">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
+    
+                  
+    
                   </div>
-
+    
                 </div>
-
+    
               </div>
             </li>
-
+    
             <li>
-              <div class="property-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/property-4.png" alt="Luxury villa in Rego Park" class="w-100">
-                  </a>
-
-                  <div class="card-badge green">For Rent</div>
-
-                  <div class="banner-actions">
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
-                      <address>Belmont Gardens, Chicago</address>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
-                    </button>
-
-                    <button class="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-price">
-                    <strong>$34,900</strong>/Month
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Luxury villa in Rego Park</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
-                  <ul class="card-list">
-
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>3450</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-footer">
-
-                  <div class="card-author">
-
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
-
-                    <div>
-                      <p class="author-name">
-                        <a href="#">William Seklo</a>
-                      </p>
-
-                      <p class="author-title">Estate Agents</p>
-                    </div>
-
-                  </div>
-
-                  <div class="card-footer-actions">
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="resize-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
               </div>
             </li>
-
+    
           </ul>
-
+    
         </div>
+            
+
+            
+
       </section>
 
 
+    
+    
+          <ul class="service-list">
+    
+            <li>
+              <div class="property-card">
+    
+                <figure class="card-banner">
+    
+                  <a href="#">
+                    <img src="Recommended Props/4prop.jpg" alt="New Apartment Nice View" class="w-100">
+                  </a>
+    
+                  <div class="card-badge orange">For Sale</div>
+    
+                  <div class="banner-actions">
+    
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+    
+                      <address>Gota, Ahmedabad</address>
+                    </button>
+    
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+    
+                      <span>4</span>
+                    </button>
+    
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+    
+                      <span>2</span>
+                    </button>
+    
+                  </div>
+    
+                </figure>
+    
+                <div class="card-content">
+    
+                  <div class="card-price">
+                    <strong>₹1.25 Cr</strong>
+                  </div>
+    
+                  <h3 class="h3 card-title">
+                    <a href="#">2BHK Independent House</a>
+                  </h3>
+    
+                  <p class="card-text">
+                    Luxurious Furnished property in one the most popular locations of Ahmedabad.
+                  </p>
+    
+                  <ul class="card-list">
+    
+                    <li class="card-item">
+                      <strong>2</strong>
+    
+                      <ion-icon name="bed-outline"></ion-icon>
+    
+                      <span>Bedrooms</span>
+                    </li>
+    
+                    <li class="card-item">
+                      <strong>2</strong>
+    
+                      <ion-icon name="man-outline"></ion-icon>
+    
+                      <span>Bathrooms</span>
+                    </li>
+    
+                    <li class="card-item">
+                      <strong>3519</strong>
+    
+                      
+    
+                      <span>Square Ft</span>
+                    </li>
+    
+                  </ul>
+    
+                </div>
+    
+                <div class="card-footer">
+    
+                  <div class="card-author">
+    
+                  
+    
+                    <div>
+                      <p class="author-name">
+                        <a href="#">Sygnius Realty</a>
+                      </p>
+    
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+    
+                  </div>
+    
+                  <div class="card-footer-actions">
+    
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+    
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+    
+                    
+    
+                  </div>
+    
+                </div>
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="property-card">
+    
+                <figure class="card-banner">
+    
+                  <a href="#">
+                    <img src="Recommended Props/5prop.jpg" alt="Modern Apartments" class="w-100">
+                  </a>
+    
+                  <div class="card-badge green">For Rent</div>
+    
+                  <div class="banner-actions">
+    
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+    
+                      <address>Savan Villa, Ahmedabad</address>
+                    </button>
+    
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+    
+                      <span>4</span>
+                    </button>
+    
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+    
+                      <span>2</span>
+                    </button>
+    
+                  </div>
+    
+                </figure>
+    
+                <div class="card-content">
+    
+                  <div class="card-price">
+                    <strong>₹22,000</strong>/Month
+                  </div>
+    
+                  <h3 class="h3 card-title">
+                    <a href="#">Godrej Green Glades</a>
+                  </h3>
+    
+                  <p class="card-text">
+                    Spacious and Affordable Apartment for Rent in the best Locality of Ahmedabad. </br>
+                  </p>
+    
+                  <ul class="card-list">
+    
+                    <li class="card-item">
+                      <strong>3</strong>
+    
+                      <ion-icon name="bed-outline"></ion-icon>
+    
+                      <span>Bedrooms</span>
+                    </li>
+    
+                    <li class="card-item">
+                      <strong>1</strong>
+    
+                      <ion-icon name="man-outline"></ion-icon>
+    
+                      <span>Bathrooms</span>
+                    </li>
+    
+                    <li class="card-item">
+                      <strong>1600</strong>
+    
+                     
+    
+                      <span>Square Ft</span>
+                    </li>
+    
+                  </ul>
+    
+                </div>
+    
+                <div class="card-footer">
+    
+                  <div class="card-author">
+    
+                   
+    
+                    <div>
+                      <p class="author-name">
+                        <a href="#">Shakti Singh</a>
+                      </p>
+    
+                      <p class="author-title">Owner</p>
+                    </div>
+    
+                  </div>
+    
+                  <div class="card-footer-actions">
+    
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+    
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+    
+                    
+    
+                  </div>
+    
+                </div>
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="property-card">
+    
+                <figure class="card-banner">
+    
+                  <a href="#">
+                    <img src="Recommended Props/6prop.jpg" alt="Comfortable Apartment" class="w-100">
+                  </a>
+    
+                  <div class="card-badge green">For Rent</div>
+    
+                  <div class="banner-actions">
+    
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+    
+                      <address>Gota, Ahmedabad</address>
+                    </button>
+    
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+    
+                      <span>4</span>
+                    </button>
+    
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+    
+                      <span>2</span>
+                    </button>
+    
+                  </div>
+    
+                </figure>
+    
+                <div class="card-content">
+    
+                  <div class="card-price">
+                    <strong>₹17,000</strong>/Month
+                  </div>
+    
+                  <h3 class="h3 card-title">
+                    <a href="#">Spatious Apartment</a>
+                  </h3>
+    
+                  <p class="card-text">
+                    Comfortable Apartment (Unfurnished) for students/couples in one of the best areas of Ahmedabad.
+                  </p>
+    
+                  <ul class="card-list">
+    
+                    <li class="card-item">
+                      <strong>2</strong>
+    
+                      <ion-icon name="bed-outline"></ion-icon>
+    
+                      <span>Bedrooms</span>
+                    </li>
+    
+                    <li class="card-item">
+                      <strong>1</strong>
+    
+                      <ion-icon name="man-outline"></ion-icon>
+    
+                      <span>Bathrooms</span>
+                    </li>
+    
+                    <li class="card-item">
+                      <strong>1200</strong>
+  
+                      <span>Square Ft</span>
+                    </li>
+    
+                  </ul>
+    
+                </div>
+    
+                <div class="card-footer">
+    
+                  <div class="card-author">
+    
+    
+                    <div>
+                      <p class="author-name">
+                        <a href="#">Sunil Patel</a>
+                      </p>
+    
+                      <p class="author-title">Owner</p>
+                    </div>
+    
+                  </div>
+    
+                  <div class="card-footer-actions">
+    
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+    
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+    
+                  
+    
+                  </div>
+    
+                </div>
+    
+              </div>
+            </li>
+    
+            <li>
+              </div>
+            </li>
+    
+          </ul>
+    
+        </div>
 
+        <section class="property" id="property">
+          <div class="section">
+      
+            <p class="section-subtitle">Properties</p>
+      
+            <h2 class="h2 section-title">Explore by location</h2>
+      
+            <ul class="service-list">
+      
+              <li>
+                <div class="property-card">
+      
+                  <figure class="card-banner">
+      
+                    <a href="#">
+                      <img src="images/explore1.jpeg" alt="New Apartment Nice View" class="center">
+                      <div class="centered">
+                       <h1>Ahmedabad</h1>
+                       <h2>10 Villas 12 Apartment</h2>
+                      </div>
+                    </a>
+      
+                    </div>
+      
+                  </figure>
+      
+                  <div class="card-content">
+                    
+                  </div>
+      
+                  
+              </li>
+      
+              <li>
+                <div class="property-card">
+      
+                  <figure class="card-banner">
+      
+                    <a href="#">
+                      <img src="images/explore2.png" alt="New Apartment Nice View" class="center">
+                      <div class="centered">
+                       <h1>Vadodara</h1>
+                       <h2>9 Villas 10 Apartment</h2>
+                      </div>
+                    </a>
+      
+                    </div>
+      
+                  </figure>
+      
+                  <div class="card-content">
+                    
+                  </div>
+      
+                  
+              </li>
+              <li>
+                <div class="property-card">
+      
+                  <figure class="card-banner">
+      
+                    <a href="#">
+                      <img src="images/explore3.png" alt="New Apartment Nice View" class="center">
+                      <div class="centered">
+                       <h1>Surat</h1>
+                       <h2>8 Villas 15 Apartment</h2>
+                      </div>
+                    </a>
+      
+                    </div>
+      
+                  </figure>
+      
+                  <div class="card-content">
+                    
+                  </div>
+      
+                  
+              </li>
+            </ul>
+      
+          </div>
+
+          <section> </section>
 
       <!-- 
         - #FEATURES
@@ -1309,10 +1536,249 @@
     -->
 
 
-
+        </section>
 
 
       <!-- 
+        - #CTA
+      -->
+<!--
+      <section class="cta">
+        <div class="container">
+      
+          <div class="cta-card">
+            <div class="card-content">
+              <h2 class="h2 card-title">Do you have any questions?</h2>
+      
+              <p class="card-text">We can help you realize your Dream of a new Home</p>
+            </div>
+      
+            <button class="btn cta-btn">
+              <span>Contact Us</span>
+      
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+      
+        </div>
+      </section>
+      
+      <style>
+      .cta {
+        position: relative;
+        bottom: -20px;
+        max-height: -25px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      </style>
+      
+
+-->
+
+
+
+  <!-- 
+    - #FOOTER
+
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="images/DreamHome.jpg" alt="DreamHome logo">
+          </a>
+
+          <p class="section-text">
+            Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
+          </p>
+
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Ahmedabad, Gujarat, India</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+0123456789" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>+0123-456789</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@dreamhome.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>contact@dreamhome.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+            
+            .footer-link-box > ul:first-child {
+              margin-top: 20px;
+            }
+
+            
+
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">All Products</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Locations Map</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Buyers</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Promotional Offers</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Customer Care</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">codewithTeam11</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+-->
+
+<!-- 
         - #CTA
       -->
 
@@ -1321,13 +1787,13 @@
 
           <div class="cta-card">
             <div class="card-content">
-              <h2 class="h2 card-title">Do you have question</h2>
+              <h2 class="h2 card-title">Do you have any Questions?</h2>
 
-              <p class="card-text">We can help you realize your dream of a new home</p>
+              <p class="card-text">We can help you realize your Dream of a new Home</p>
             </div>
 
             <button class="btn cta-btn">
-              <span>Contact us</span>
+              <span>Contact Us</span>
 
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </button>
@@ -1355,7 +1821,7 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo-light.png" alt="Homeverse logo">
+            <img src="images/DreamHome.jpg" alt="Homeverse logo">
           </a>
 
           <p class="section-text">
@@ -1368,7 +1834,7 @@
               <a href="#" class="contact-link">
                 <ion-icon name="location-outline"></ion-icon>
 
-                <address>Brooklyn, New York, United States</address>
+                <address>Ahmedabad, Gujarat, India</address>
               </a>
             </li>
 
@@ -1384,7 +1850,7 @@
               <a href="mailto:contact@homeverse.com" class="contact-link">
                 <ion-icon name="mail-outline"></ion-icon>
 
-                <span>contact@homeverse.com</span>
+                <span>contact@dreamhome.com</span>
               </a>
             </li>
 
@@ -1527,7 +1993,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+          &copy; 2023 <a href="#">codewithTeam11</a>. All Rights Reserved
         </p>
 
       </div>
@@ -1535,14 +2001,10 @@
 
   </footer>
 
-
-
-
-
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="/script.js"></script>
 
   <!-- 
     - ionicon link
